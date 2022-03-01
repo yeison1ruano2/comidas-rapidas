@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMIDAS RAPIDAS</title>
+    <script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="shortcut icon" href="img/fastfoodicon.png">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="two columns">
+                    
+                    <img class="img_logo" src="img/fastfoodicon.png" alt="logo picture" id="logo">
+                    
+                </div>
+
+                <div class="two colums u-pull-right">
+                    
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/carrito.png" alt="cart picture" id="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="four columns">
+                        
+                        <ul class="navct">
+                            
+                            <li><a class="active" href="#">Inicio</a></li>
+                            <li><a class="active" href="#">Nosotros</a></li>
+                            <li><a class="active" href="#">Domicilios</a></li>
+                            <li>
+                                <div class="buscar">
+                                    <input type="text" placeholder="Buscar">
+                                    <div class="btn">
+                                        <i class="fas fa-search icon"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="general">
+        <div class="novedades">
+            <div class="contenedor_comida">
+                <h4>CARTA</h4>
+                <li><a href="#" class="list-carta">Hamburguesa</a></li>
+                <li><a href="#" class="list-carta">Perros Calientes</a></li>
+                <li><a href="#" class="list-carta">Salchipapas</a></li>
+                <li><a href="#" class="list-carta">Sandwichs</a></li>
+                <li><a href="#" class="list-carta">Jugos Naturales</a></li>
+            </div>
+            <div class="ubicacion">
+                <h4>UBICACION</h4>
+                <img src="img/maps.jpg" alt="picture location">
+            </div>
+        </div>
+        <div class="compras">
+            <div id="lista-cafe" class="container">
+                <h1 id="encabezado" class="encabezado">Pedidos en Linea</h1>
+        
+                <div class="row">
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/hamburguesa.jpg" alt="hamburguesa picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Hamburguesa Sencilla</h4>
+                                <p>Carne-lechuga-tomate-cebolla-ripio-queso-jamon</p>
+                                <p class="precio"><span class="u-pull-left">$8.000</span></p>
+                                <!--<section class="buttons">
+                                    <button class="u-full-width button-primary button input agregar_carrito" id="confirmar">Agregar Al Carrito</button>
+                                </section>-->
+                                <div class="notification">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="confi"
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div> 
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/hamburguesa hawaina.jpg" alt="hambur_hawai picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Hamburguesa Hawaiana</h4>
+                                <p>Carne-lechuga-tomate-cebolla-ripio-queso-piña calda-jamon</p>
+                                <p class="precio"><span class="u-pull-left">$9.000</span></p>
+                                <div class="notification1">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="confir" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/hamburguesadepollo.jpg" alt="hamburpollo picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Hamburguesa De Pollo</h4>
+                                <p>Carne-lechuga-tomate-cebolla-ripio-queso-pollo-jamon</p>
+                                <p class="precio"><span class="u-pull-left">$10.000</span></p>
+                                <div class="notification2">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="confirm"
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--Row-->
+        
+                <div class="row">
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/hamburguesadesmechada.jpg" alt="hamburdesme picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Hamburguesa Desmechada</h4>
+                                <p>Carne-tomate-lechuga-cebolla-ripio-queso-carne desmechada-jamon</p>
+                                <p class="precio"><span class="u-pull-left">$10.000</span></p>
+                                <div class="notification3">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="conf"
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/hamburguesaespecial.jpg" alt="hamburespecial picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Hamburguesa Especial</h4>
+                                <p>Carne-tomate-lechuga-cebolla-ripio-queso-pollo-piña calada-tocineta-jamon</p>
+                                <p class="precio"><span class="u-pull-left">$12.000</span></p>
+                                <div class="notification4">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="con"
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/hamburguesadoblecarne.jpg" alt="hamburdoble picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Hamburguesa Doble carne</h4>
+                                <p>Carne-tomate-lechuga-cebolla-ripio-pollo-piña calada-tocineta-queso-jamon</p>
+                                <p class="precio"><span class="u-pull-left">$13.000</span></p>
+                                <div class="notification5">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="caraagre"
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--Row-->
+        
+                <div class="row">
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/perro.jpg" alt="perro caliente picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Perro sencillo</h4>
+                                <p>Salchicha americana-cebolla-queso-ripio-jamon</p>
+                                <p class="precio"><span class="u-pull-left">$7.000</span></p>
+                                <div class="notification6">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="lecheagre"
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/perropollo.jpg" alt="perro de pollo picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Perro De Pollo</h4>
+                                <p>Salchicha americana-cebolla-queso-ripio-jamon-pollo</p>
+                                <p class="precio"><span class="u-pull-left">$9.000</span></p>
+                                <div class="notification7">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="bomagre"
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/perrocarne.jpg" alt="perro caliente de carne picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Perro De Carne</h4>
+                                <p>Salchicha americana-cebolla-queso-ripio-jamon-carne</p>
+                                <p class="precio"><span class="u-pull-left">$9.000</span></p>
+                                <div class="notification8">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="text"></span>
+                                    <span class="close"><i class="fa fa-close"></i></span>
+                                </div>
+                                <a href="#" id="capuagre"
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--Row-->
+        
+                <div class="row">
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/perrohawaino.jpg" alt="Perro Hawaiano picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Perro Hawaiano</h4>
+                                <p>Salchicha americana-cebolla-queso-ripio-piña calada-jamon</p>
+                                <p class="precio"><span class="u-pull-left">$8.000</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/perroespecial.png" alt="Perro Especial picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Perro Especial</h4>
+                                <p>Salchicha americana-cebolla-queso-ripio-piña calada-tocineta-pollo</p>
+                                <p class="precio"><span class="u-pull-left">$10.000</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/salchipapaoriginal.jpg" alt="Salchipapa Original picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Salchipapa Original</h4>
+                                <p>Papas a la francesa-papa criolla-papa combinada-salchicha-queso</p>
+                                <p class="precio"><span class="u-pull-left">$4.000</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--Row-->
+
+                <div class="row">
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/salchipapacarne.png" alt="Salchipapa de carne desmechada picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Salchipapa De Carne</h4>
+                                <p>Papa a la francesa-criolla-papa combinada-salchicha-queso-carne desmechada</p>
+                                <p class="precio"><span class="u-pull-left">$6.500</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/salchipapapollo.jpg" alt="Salchipapa de Pollo picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Salchipapa De Pollo</h4>
+                                <p>Papa a la francesa-papa criolla-papa combinada-salchicha-queso-pollo</p>
+                                <p class="precio"><span class="u-pull-left">$6.000</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/salchipapamixta.png" alt="Salchipapa Mixta picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Salchipapa Mixta</h4>
+                                <p>Papa a la francesa-papa criolla-papa combinada-salchicha-queso-pollo-carne</p>
+                                <p class="precio"><span class="u-pull-left">$7.500</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--Row-->
+
+                <div class="row">
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/salchipapasuper.png" alt="salchipapa super picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Salchipapa Super</h4>
+                                <p>Papa a la francesa-papa criolla-papa combinada-salchicha-doble queso-pollo</p>
+                                <p class="precio"><span class="u-pull-left">$10.000</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/choripapa.png" alt="choripapa picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Choripapa</h4>
+                                <p>Papa a la francesa-papa criolla-papa combinada-salchicha-porcion de chorizo-queso</p>
+                                <p class="precio"><span class="u-pull-left">$6.500</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/choricostilla.png" alt="chori costilla picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Salchicha Chori Costilla</h4>
+                                <p>Papa a la francesa-papa criolla-papa combinada-salchicha-porcion de chorizo-porcion de costilla-ripio-maicito-queso</p>
+                                <p class="precio"><span class="u-pull-left">$13.000</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--Row-->
+
+                <div class="row1">
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/salchipapasuperespecial.png" alt="salchipapa super especial picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Salchipapa Super Especial</h4>
+                                <p>Papa a la francesa-papa criolla-papa combinada-salchicha-carne-tocineta-2 huevos de codorniz-doble queso-pollo</p>
+                                <p class="precio"><span class="u-pull-left">$12.000</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="four columns">
+                        <div class="card">
+                            <img src="img/salchipapasuperespecialmax.png" alt="salchipapa super especial max picture" class="u-full-width">
+                            <div class="info-card">
+                                <h4 id="title-product">Salchipapa Super Especial Max</h4>
+                                <p>Papa a la francesa-papa criolla-papa combinada-salchicha-dos porciones de costilla ahumada-dos porciones de tocineta-dos porciones de queso-dos chorizos-4 huevos de codorniz</p>
+                                <p class="precio"><span class="u-pull-left">$27.000</span></p>
+                                <a href="#" 
+                                class="u-full-width button-primary button input agregar-carrito
+                                ">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
